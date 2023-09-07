@@ -1,7 +1,9 @@
+import { ReactNode } from "react";
+
 interface Props {
-	price?: number;
+	children: ReactNode;
 }
 
-export const ProductPrice = ({ price }: Props) => {
-	return <div>{price}</div>;
+export const ProductPrice = ({ children }: Props) => {
+	return <div>Price: {children}</div>;
 };

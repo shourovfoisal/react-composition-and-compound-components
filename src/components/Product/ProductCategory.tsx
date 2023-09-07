@@ -1,7 +1,9 @@
+import { ReactNode } from "react";
+
 interface Props {
-	category?: string;
+	children: ReactNode;
 }
 
-export const ProductCategory = ({ category }: Props) => {
-	return <div>{category}</div>;
+export const ProductCategory = ({ children }: Props) => {
+	return <div>{children}</div>;
 };

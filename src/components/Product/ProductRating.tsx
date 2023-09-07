@@ -1,13 +1,9 @@
-import { Product } from "./ProductPage";
+import { ReactNode } from "react";
 
 interface Props {
-	rating?: Product["rating"];
+	children: ReactNode;
 }
 
-export const ProductRating = ({ rating }: Props) => {
-	return (
-		<div>
-			Reviews: {rating?.reviews} | Stars: {rating?.stars}
-		</div>
-	);
+export const ProductRating = ({ children }: Props) => {
+	return <div>Stars: {children}</div>;
 };

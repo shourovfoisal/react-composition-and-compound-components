@@ -1,7 +1,9 @@
+import { ReactNode } from "react";
+
 interface Props {
-	title?: string;
+	children: ReactNode;
 }
 
-export const ProductTitle = ({ title }: Props) => {
-	return <div>{title}</div>;
+export const ProductTitle = ({ children }: Props) => {
+	return <div>{children}</div>;
 };
