@@ -14,14 +14,14 @@ export const Navbar = () => {
 					</Link>
 				</li>
 
-				{/* <li>
+				<li>
 					<Link
-						to="/link"
+						to="/product-card"
 						className="block px-3 py-2 shadow-md rounded-lg bg-white"
 					>
-						Menu
+						Product Card
 					</Link>
-				</li> */}
+				</li>
 			</ul>
 		</div>
 	);

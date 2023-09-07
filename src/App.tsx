@@ -1,6 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { Layout, Navbar } from "./components";
+import { Layout, Navbar, ProductPage } from "./components";
 
 function App() {
 	return (
@@ -8,7 +8,7 @@ function App() {
 			<Navbar />
 			<Routes>
 				<Route path="/" element={<Layout />}>
-					{/* <Route path="/link" element={<Component />} /> */}
+					<Route path="/product-card" element={<ProductPage />} />
 				</Route>
 			</Routes>
 		</div>
